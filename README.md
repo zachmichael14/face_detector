@@ -19,6 +19,18 @@ The goal was to utilize some common data science tools and explore a few differe
 * PIL/pillow
 
 ## Usage
+### Adjusting Model Sensitivity
+You can adjust the model's sensitivity with the *Scale Factor* and *Neighbors* sliders.
+
+#### **Scale Factor**
+The model makes several passes over the image, resizing the image before each pass; scale factor tells the model how much smaller to make image.
+
+Changing this parameter can have a somewhat unpredictable effect on the accuracy of the model, but best results tend to be found around 1.1-1.2.
+
+#### **Neighbors**
+This parameter determines the minimum number of positive detections a group of pixels must have before it's considered a match.
+
+Typically, increasing this parameter decreases the model's sesitivity.
 
 ## How it works
 
