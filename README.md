@@ -4,7 +4,6 @@
 * [Technologies](#technologies)
 * [Usage](#usage)
   * [Adjusting Model Sensitivity](#adjusting-model-sensitivity)
-* [Deployment Links](#deployment-links) 
 * [Author](#author-/--zachary-seitz)
 
 ## Introduction
@@ -12,11 +11,17 @@ The goal was to utilize some common data science tools and explore a few differe
 
 ## Technologies
 * Python
-* Jupyter notebooks/
+* Binder
+* Jupyter notebooks
 * Ipywidgets
 * Numpy
 * PIL/pillow
-* Voila
-* Binder
 
 ## Usage
+
+## Author
+### Zachary Seitz
+#### Let's connect!
+* Find me on [Linkedin](https://linkedin.com/in/zachmichael14).
+* Email me at zachmichael14@gmail.com.
+* Visit my [website](https://zachmichael14.github.io/gh_page/).
