@@ -35,11 +35,7 @@ The goal was to utilize some common data science tools and explore a few differe
   As you can imagine, the cascade can also detect all sorts of stuff that isn't a face, so this minimum neighbors parameter helps filter out the noise. If the cascade counts the same object as a face each time it passes, there's a better chance it's an actual face rather than a false positive. We call these detections *neighbors* if the detections include the same pixels. The more neighbors a hit has, the more likely it is to be a face. Practically, a higher minNeighbors value means fewer faces are likely to be detected, but it also typically results in fewer false positives.
 
 # Further reading
-- Tesseract OCR: https://thebinarynotes.com/tesseract-an-ocr-engine-by-google/
-
 - OpenCV Haar cascade: https://docs.opencv.org/3.4/db/d28/tutorial_cascade_classifier.html
-
-- Otsu's thresholding: https://learnopencv.com/otsu-thresholding-with-opencv/
 
 ## Author
 ### Zachary Seitz
