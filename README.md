@@ -5,7 +5,7 @@
 * [Usage](#usage)
   * [Adjusting Model Sensitivity](#adjusting-model-sensitivity)
 * [How it works](#how-it-works) 
-* [Author](#author-/--zachary-seitz)
+* [Author](#author)
 
 ## Introduction
 The goal was to utilize some common data science tools and explore a few different deployment methods for ML models. I utimately settled on a Jupyter Notebook deployed using Binder.
