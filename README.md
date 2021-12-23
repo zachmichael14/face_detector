@@ -5,10 +5,12 @@
 * [Usage](#usage)
   * [Adjusting Model Sensitivity](#adjusting-model-sensitivity)
 * [How it works](#how-it-works) 
-* [Author](#author-/--zachary-seitz)
+* [Author](#author)
 
 ## Introduction
 The goal was to utilize some common data science tools and explore a few different deployment methods for ML models. I utimately settled on a Jupyter Notebook deployed using Binder.
+
+This app will detect faces in uploaded images and live video using your webcam.
 
 ## Technologies
 * Python
@@ -19,6 +21,11 @@ The goal was to utilize some common data science tools and explore a few differe
 * PIL/pillow
 
 ## Usage
+
+To upload a photo:
+
+1. Click the badge below to start the notebook.
+2. Run
 ### Adjusting Model Sensitivity
 You can adjust the model's sensitivity with the *Scale Factor* and *Neighbors* sliders.
 
