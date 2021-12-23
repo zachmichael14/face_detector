@@ -25,7 +25,9 @@ This app will detect faces in uploaded images and live video using your webcam.
 To upload a photo:
 
 1. Click the badge below to start the notebook.
-2. Run
+   - [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/zachmichael14/detector/HEAD?labpath=detector.ipynb)
+2. 
+3. Run
 ### Adjusting Model Sensitivity
 You can adjust the model's sensitivity with the *Scale Factor* and *Neighbors* sliders.
 
