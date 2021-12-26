@@ -1,18 +1,37 @@
 # Detect faces in video and images with OpenCV
+
 ## Table of Contents
-* [Introduction](#introduction)
-* [Technologies](#technologies)
-* [Usage](#usage)
-  * [Adjusting Model Sensitivity](#adjusting-model-sensitivity)
-* [How it works](#how-it-works) 
-* [Author](#author)
 
-## Introduction
-The goal was to utilize some common data science tools and explore a few different deployment methods for ML models. I utimately settled on a Jupyter Notebook deployed using Binder.
+<ol>
+ <li><a href="#introduction">Introduction</a></li>
+ <ol>
+  <li><a href="#the-model">The model</a></li>
+ </ol>
+ <li><a href="#technologies">Technologies</a></li>
+ <li><a href="#usage">Usage</a></li>
+  <ol>
+   <li><a href="#adjusting-model-sensitivity">Adjusting model sensitivity</a></li>
+  </ol>
+ <li><a href="#further-reading">Further reading</a></li>
+ <li><a href="#author">Author</a></li>
+ </ol>
 
-The notebook contains a guided example using images stored in ```test_images``` directory and also allows a user to upload their own photo for detection.
+## Introduction <a class="anchor" id="introduction"></a>
 
-## Technologies
+The goal of this project was to utilize some common data science tools and explore a few different deployment methods for ML models. I utimately settled on a Jupyter Notebook deployed using Binder.
+
+The notebook contains a guided example using images stored in the ```test_images``` directory and also allows the user to upload their own photo for detection.
+
+#### The model <a class="anchor" id="the-model"></a>
+
+During training, each model defines an expected object size. In this case, the model expects face objects to be 24x24 pixels. Since people within an image are often a variable distance from the camera, their faces appear to be different sizes and thus may be outside the expected size. In order to maximize the chances that an object will fit the given size, the detection model makes several passes over the image, resizing the image before each pass.
+
+There are two parameters, minSize and maxSize, that allow for finer control of the object size, but they're not strictly necessary here. 
+
+Instead, this notebook focuses on two other parameters, *scale factor* and *minimum neighbors*. See <a href="adjusting-model-sensitivity">adjusting model sensitivity</a> for more information.
+
+## Technologies <a class="anchor" id="technologies"></a>
+
 * Python
 * Binder
 * Jupyter notebooks
@@ -20,46 +39,40 @@ The notebook contains a guided example using images stored in ```test_images``` 
 * Numpy
 * PIL/pillow
 
-## Usage
+## Usage <a class="anchor" id="usage"></a>
 
 To upload a photo:
 
-1. Click the badge below to start the notebook.
-   - [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/zachmichael14/detector/HEAD?labpath=detector.ipynb)
+ 1. Click the badge below to start the notebook.
+    - [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/zachmichael14/detector/HEAD?labpath=detector.ipynb)
+ 2. Click "Image Upload" in the Table of Contents.
+ 3. Run the cell by clicking on it and using ```Shift + Enter``` or the run button in the toolbar.
+ 4. Upload an image using the upload button that appears after running the cell. Accept formats include .jpg/.jpeg and .png.
+ 5. Adjust the model's sensitivity to see how detection changes (see below).
 
-### Adjusting Model Sensitivity
-You can adjust the model's sensitivity with the *Scale Factor* and *Neighbors* sliders.
+### Adjusting Model Sensitivity <a class="anchor" id="adjusting-model-sensitivity"></a>
 
-#### **Scale Factor**
-The model makes several passes over the image, resizing the image before each pass; scale factor tells the model how much smaller to make image.
+The sensitivity and speed of the model is affected by some important parameters: *scale factor* and *minimum neighbors*.
 
-Changing this parameter can have a somewhat unpredictable effect on the accuracy of the model, but best results tend to be found around 1.1-1.2.
+#### Scale factor
 
-#### **Neighbors**
-This parameter determines the minimum number of positive detections a group of pixels must have before it's considered a match.
+Scale factor determines how much the model decreases the size of the image before each pass. Practically speaking, a lower scale factor value means a less dramatic resize at each step, so the model is more sensitive but also slower. Best results tend to be found around 1.1-1.2.
 
-Typically, increasing this parameter decreases the model's sesitivity.
+#### Minimum neighbors
 
-## How it works
+The effect of minimum neighbors is a bit more straightforward, as it's essentially a direct indicator of the model's sensitivity. This value determines the minimum number of detections a face object must have before it's considered a match. Practically, a higher minimum neighbors value means fewer faces are likely to be detected, but it also typically results in fewer false positives.
+ 
 
-### A bit about image modes and pixels
-  An image's *mode* determines how the image pixels are represented to the computer.
+## Further reading <a class="anchor" id="further-reading"></a>
 
-  Very generally speaking, a typical color image will be in the red-green-blue mode, or RGB for short. This means that each pixel is composed of three numbers, called *channels* (in this case, one channel for each color). These channel values range from 0 to 255. So a pixel with values (255, 0, 0) is a red pixel. A pixel with (255, 0, 255) has maxed red and blue channel values, so it would be a purple pixel.
-
-### The Haar cascasde
-  To understand how the Haar cascade actually operates on the image, imagine using a magnifying glass to read a newspaper. At first, you can't read any words, but you can faintly make out shapes of words, so you bring the magnifying glass closer. Now you can read just the big words—the headings and so on. Finally, you move closer and can read all the words becuase you've 'resized' the image within the magnifying glass. The Haar cascade kind of works like this; it uses what's called a sliding window approach. This means it checks for faces within the reading window (i.e. inside the magnifying glass) as it slides the reading window across the image, marking any faces it finds along the way. It then resizes the image (i.e. moves the magnifying glass) and scans through the image again.
-
-  The accuracy and speed of the sliding window is affected by some important parameters: scale factor and minimum neighbors. Scale factor determines how much the image is resized at each step of the cascasde. Practically, this allows the cascade to detect faces of different sizes if say, one person is really close to camera while everyone else is far away. Higher scale factors allow for faster detection, but make for less sensitive classifiers.
-
-  As you can imagine, the cascade can also detect all sorts of stuff that isn't a face, so this minimum neighbors parameter helps filter out the noise. If the cascade counts the same object as a face each time it passes, there's a better chance it's an actual face rather than a false positive. We call these detections *neighbors* if the detections include the same pixels. The more neighbors a hit has, the more likely it is to be a face. Practically, a higher minNeighbors value means fewer faces are likely to be detected, but it also typically results in fewer false positives.
-
-## Further reading
 - OpenCV Haar cascade: https://docs.opencv.org/3.4/db/d28/tutorial_cascade_classifier.html
 
-## Author
+## Author <a class="anchor" id="author"></a>
+
 ### Zachary Seitz
+
 #### Let's connect!
+
 * Find me on [Linkedin](https://linkedin.com/in/zachmichael14).
 * Email me at zachmichael14@gmail.com.
-* Visit my [website](https://zachmichael14.github.io/gh_page/).
+* Visit my [resume website](https://zachmichael14.github.io/gh_page/).
