@@ -28,7 +28,7 @@ During training, each model defines an expected object size. In this case, the m
 
 There are two parameters, minSize and maxSize, that allow for finer control of the object size, but they're not strictly necessary here. 
 
-Instead, this notebook focuses on two other parameters, *scale factor* and *minimum neighbors*. See <a href="adjusting-model-sensitivity">adjusting model sensitivity</a> for more information.
+Instead, this notebook focuses on two other parameters, *scale factor* and *minimum neighbors*. See <a href="#adjusting-model-sensitivity">adjusting model sensitivity</a> for more information.
 
 ## Technologies <a class="anchor" id="technologies"></a>
 
