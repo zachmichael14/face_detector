@@ -10,7 +10,7 @@
 ## Introduction
 The goal was to utilize some common data science tools and explore a few different deployment methods for ML models. I utimately settled on a Jupyter Notebook deployed using Binder.
 
-This app will detect faces in uploaded images and live video using your webcam.
+The notebook contains a guided example using images stored in ```test_images``` directory and also allows a user to upload their own photo for detection.
 
 ## Technologies
 * Python
@@ -26,8 +26,7 @@ To upload a photo:
 
 1. Click the badge below to start the notebook.
    - [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/zachmichael14/detector/HEAD?labpath=detector.ipynb)
-2. 
-3. Run
+
 ### Adjusting Model Sensitivity
 You can adjust the model's sensitivity with the *Scale Factor* and *Neighbors* sliders.
 
