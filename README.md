@@ -79,7 +79,7 @@ Instead, this notebook focuses on two other parameters, *scale factor* and *mini
  ![static_notebook.png](img/static_notebook.png)
  
  2. Click "Image Upload" in the Table of Contents.
- 3. Run the cell by clicking on it and using ```Shift + Enter``` or the run button in the toolbar.
+ 3. Run the cell by clicking on it and using either ```Shift + Enter``` or the run button in the toolbar.
  4. Upload an image using the upload button that appears after running the cell. Accept formats include .jpg/.jpeg and .png. The detection model will automatically run using default values.
 
  ![screenshot of uploaded cartoon faces](img/init_upload.png)
