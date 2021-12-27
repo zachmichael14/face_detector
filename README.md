@@ -1,4 +1,4 @@
-# Detect faces in video and images with OpenCV
+# Detect faces in images with OpenCV
 
 ## Table of Contents
 
@@ -20,7 +20,7 @@
 
 The goal of this project was to utilize some common data science tools and explore a few different deployment methods for ML models. I utimately settled on a Jupyter Notebook deployed using Binder.
 
-The notebook contains a guided example using images stored in the ```test_images``` directory and also allows the user to upload their own photo for detection.
+The notebook contains a guided example using images stored in the ```img``` directory and also allows the user to upload their own photo for detection.
 
 #### The model <a class="anchor" id="the-model"></a>
 
