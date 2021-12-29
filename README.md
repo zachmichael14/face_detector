@@ -8,7 +8,7 @@
   <li><a href="#the-model">The model</a></li>
  </ol>
  <li><a href="#technologies">Technologies</a></li>
- <li><a href="#usage">Usage</a></li>
+ <li><a href="#using-the-notebook">Using the notebook</a></li>
   <ol>
    <li><a href="#start-the-notebook">Start the notebook</a></li>
    <li><a href="#guided-example">Guided example</a></li>
@@ -42,7 +42,7 @@ Instead, this notebook focuses on two other parameters, *scale factor* and *mini
 * Numpy
 * PIL/pillow
 
-## Usage <a class="anchor" id="usage"></a>
+## Using the notebook <a class="anchor" id="using-the-notebook"></a>
 
 ### Start the notebook <a class="anchor" id="start-the-notebook"></a>
 
