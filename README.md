@@ -23,7 +23,9 @@
 
 The goal of this project was to utilize some common data science tools and explore a few different deployment methods for ML models. I utimately settled on a Jupyter Notebook deployed using Binder.
 
-The notebook contains a guided example using images stored in the ```img``` directory and also allows the user to upload their own photo for detection. While this notebook is more technical in nature, my aim was to write it such that the model could be used without much regard to the explanation.
+The notebook contains a guided example using images stored in the ```img``` directory and also allows the user to upload their own photo for detection. 
+
+While this notebook is more technical in nature, my aim was to write it such that the model could be used without much regard to the explanation.
 
 #### The model <a class="anchor" id="the-model"></a>
 
