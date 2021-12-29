@@ -95,13 +95,17 @@ The sensitivity and speed of the model is affected by some important parameters:
 
 #### Scale factor
 
-Scale factor determines how much the model decreases the size of the image before each pass. Practically speaking, a lower scale factor value means a less dramatic resize at each step, so the model is more sensitive but also slower. Best results tend to be found around 1.1-1.2.
+Scale factor determines how much the model decreases the size of the image before each pass. A lower scale factor value means a less dramatic resize at each step, so the model is more sensitive, but also slower. 
+
+Best results tend to be found around 1.1-1.2.
 
 ![max scale factor example](img/scale_factor.gif)
 
 #### Minimum neighbors
 
-The effect of minimum neighbors is a bit more straightforward, as it's essentially a direct indicator of the model's sensitivity. This value determines the minimum number of detections a face object must have before it's considered a match. Practically, a higher minimum neighbors value means fewer faces are likely to be detected, but it also typically results in fewer false positives.
+The effect of minimum neighbors is a bit more straightforward, as it's essentially a direct indicator of the model's sensitivity. This value determines the minimum number of detections a face object must have before it's considered a match and added to the list of detected faces. 
+
+A higher minimum neighbors value means fewer faces are likely to be detected, but it also results in fewer false positives.
 
 ![max minimum neighbors example](img/min_neighbors.gif)
  
