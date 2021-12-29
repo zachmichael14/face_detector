@@ -44,6 +44,16 @@ Instead, this notebook focuses on two other parameters, *scale factor* and *mini
 
 ## Using the notebook <a class="anchor" id="using-the-notebook"></a>
 
+Notebooks are composed of cells, which are units of code. When a cell is executed, the code within the cell will run and the cell will display some kind of output. 
+
+The four cells in the [guided example](#guided-example) are meant to be executed sequentially. The [photo upload](#upload-a-photo) cell can be run on its own.
+
+To execute the cell, click on it and press ```Shift + Enter``` or the play button in notebook toolbar.
+ 
+Alternatively, click on the cell and select ```Run > Run Selected Cells``` from the notebook toolbar.
+
+![running cells](img/run_cells.gif)
+
 ### Start the notebook <a class="anchor" id="start-the-notebook"></a>
 
 1. Click the badge below to start the notebook.
