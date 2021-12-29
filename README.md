@@ -47,7 +47,7 @@ Instead, this notebook focuses on two other parameters, *scale factor* and *mini
 ### Start the notebook <a class="anchor" id="start-the-notebook"></a>
 
 1. Click the badge below to start the notebook.
-    - [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/zachmichael14/detector/HEAD?labpath=detector.ipynb)
+    - [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/zachmichael14/detector/HEAD?labpath=face_detector.ipynb)
     - A static version of the notebook will be displayed while the server spins up. 
   
  ![static_notebook.png](img/static_notebook.png)
@@ -56,19 +56,19 @@ Instead, this notebook focuses on two other parameters, *scale factor* and *mini
 
 1. Run the first code cell and select an example image to use from the dropdown box. The selected image will be displayed in the cell output.
 
-![Selecting example image #2](img/cell1.png)
+![Selecting example image #2](img/cell1.gif)
 
 2. Running the next cell pre-processes the image and outputs the 2-D array required by the detection model.
 
-![Pre-processing example image #2](img/cell2.png)
+![Pre-processing example image #2](img/cell2.gif)
 
 3. The following cell will run the detection model on the chosen image using default values.
 
-![Running default detection on example image #2](img/cell3.png)
+![Running default detection on example image #2](img/cell3.gif)
 
-4. The [sensitivity](#adjusting-model-sensitivity) of the model can be adjusted by running the cell four and using the sliders that appear.
+4. The [sensitivity](#adjusting-model-sensitivity) of the model can be adjusted by running cell four and using the sliders that appear.
 
-![Adjusting model sensitivity](img/cell4.png)
+![Adjusting model sensitivity](img/cell4.gif)
 
 ### Upload a photo <a class="anchor" id="upload-a-photo"></a>
 
