@@ -85,7 +85,7 @@ Instead, this notebook focuses on two other parameters, *scale factor* and *mini
 
  5. Upload an image using the upload button that appears after running the cell. Accept formats include .jpg/.jpeg and .png. The detection model will automatically run using default values. 
 
- ![screenshot of uploaded cartoon faces](img/init_upload.png)
+ ![screenshot of uploaded cartoon faces](img/upload_image.png)
  
  6. Adjust the model's sensitivity to see how detection changes (see below).
 
