@@ -57,7 +57,7 @@ Alternatively, click on the cell and select ```Run > Run Selected Cells``` from 
 ### Start the notebook <a class="anchor" id="start-the-notebook"></a>
 
 1. Click the badge below to start the notebook.
-    - 
+    - [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/zachmichael14/face_detector/HEAD?labpath=detector.ipynb)
     - A static version of the notebook will be displayed while the server spins up. 
   
  ![static_notebook.png](img/static_notebook.png)
@@ -83,7 +83,7 @@ Alternatively, click on the cell and select ```Run > Run Selected Cells``` from 
 ### Upload a photo <a class="anchor" id="upload-a-photo"></a>
 
  1. Click the badge below to start the notebook.
-    - 
+    - [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/zachmichael14/face_detector/HEAD?labpath=detector.ipynb)
     - A static version of the notebook will be displayed while the server spins up. 
  
  ![static_notebook.png](img/static_notebook.png)
