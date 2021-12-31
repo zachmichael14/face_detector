@@ -21,7 +21,7 @@
 
 ## Introduction <a class="anchor" id="introduction"></a>
 
-The goal of this project was to utilize some common data science tools and explore a few different deployment methods for ML models. I utimately settled on a Jupyter Notebook deployed using Binder.
+The goal of this project was to utilize some common data science tools and explore a few different deployment methods for ML models. I ultimately settled on a Jupyter Notebook deployed using Binder.
 
 The notebook contains a guided example using images stored in the ```img``` directory and also allows the user to upload their own photo for detection. The detection is powered by a machine learning model called a Haar cascade.
 
