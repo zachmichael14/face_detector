@@ -29,7 +29,7 @@ While this notebook is more technical in nature, my aim was to write it such tha
 
 #### The model <a class="anchor" id="the-model"></a>
 
-During training, each model defines an expected object size. In this case, the model expects face objects to be 24x24 pixels. Since people within an image are often a variable distance from the camera, their faces appear to be different sizes and thus may be outside the expected size. In order to maximize the chances that an object will fit the given size, the detection model makes several passes over the image, resizing the image before each pass.
+During training, each object detection model defines an expected object size. In this case, the model expects face objects to be 24x24 pixels. Since people within an image are often a variable distance from the camera, their faces appear to be different sizes and thus may be outside the expected size. In order to maximize the chances that an object will fit the given size, the detection model makes several passes over the image, resizing the image before each pass.
 
 There are two parameters, minSize and maxSize, that allow for finer control of the object size, but they're not strictly necessary here. 
 
